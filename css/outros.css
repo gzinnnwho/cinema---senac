@@ -1,0 +1,95 @@
+*{
+    color: #ffffff;
+}
+h1{
+
+    text-align: center; /* alinha o texto no centro */
+    font-size: 20px; /* tamanho da fonte do texto */
+    margin-top: 30px; /* espaaçamento externo */
+}
+
+.localizacao{
+    width: 100%;  /* largura */
+    display: flex;/* abri o flex para utilizar as propriedades dele */
+    flex-direction: column;/* deixando os elementos filhos em coluna */
+    align-items: center;/* deixando os elementos centralizado ( verticalmente ) */
+    justify-content: center; /* deixando os elementos centralizado ( horrizontalmente)  */
+ 
+}
+
+.localizacao iframe{
+    
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+
+.galeria-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2vw;
+}
+
+.galeria-iten{
+    width: 300px;
+    height: 250px;
+    border: 10px solid white;
+    flex-grow: 1;
+    transition: 0.8s;
+}
+
+.galeria-iten img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.galeria-iten:hover{
+    transform: scale(1.2);
+    border-color: rgb(65, 65, 65);
+}
+
+.contato{
+margin-bottom: 80px;
+}
+
+.form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.formulario div{
+    display: flex;
+flex-direction: column;
+margin-bottom: 30px;
+
+
+
+}
+
+.formulario input, .formulario textarea{
+    color: red;
+    width: 300px;
+    border: 2px solid red;
+    border-radius: 5px;
+
+}
+
+.formulario button{
+    color: white;
+    background-color: red;
+    padding: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+@media(max-width: 768px){
+    .localizacao iframe {
+        width: 95%;
+    }
+}
